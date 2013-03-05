@@ -1,0 +1,15 @@
+C:\Users\LAPDCUC1\Desktop\Sistemas\Papeleria\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
+C:\Users\LAPDCUC1\Desktop\Sistemas\Papeleria\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb
+C:\Users\LAPDCUC1\Desktop\Sistemas\Papeleria\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\LAPDCUC1\Desktop\Sistemas\Papeleria\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
+C:\Users\LAPDCUC1\Desktop\Sistemas\Papeleria\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb
+C:\UBILLUS ULTIMO\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
+C:\UBILLUS ULTIMO\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb
+C:\UBILLUS ULTIMO\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\UBILLUS ULTIMO\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
+C:\UBILLUS ULTIMO\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb
+C:\Users\LAPDIER1\Desktop\Carlos Diaz\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
+C:\Users\LAPDIER1\Desktop\Carlos Diaz\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb
+C:\Users\LAPDIER1\Desktop\Carlos Diaz\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\LAPDIER1\Desktop\Carlos Diaz\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
+C:\Users\LAPDIER1\Desktop\Carlos Diaz\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb

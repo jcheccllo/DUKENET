@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WebLogisticaUtiles">
+</Property><Property Name="Archivo de la solución" Value="C:\UBILLUS ULTIMO\WebLogisticaUtiles\WebLogisticaUtiles.sln">
+</Property><Property Name="Date" Value="martes, 29 de mayo de 2012">
+</Property><Property Name="Time" Value="16:18 p.m.">
+</Property></Properties><Event ErrorLevel="0" Project="LCSA.SGI.WebLogisticaUtiles.Entity" Source="LCSA.SGI.WebLogisticaUtiles.Entity\LCSA.SGI.WebLogisticaUtiles.Entity.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="LCSA.SGI.WebLogisticaUtiles.Entity" Source="LCSA.SGI.WebLogisticaUtiles.Entity\LCSA.SGI.WebLogisticaUtiles.Entity.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LCSA.SGI.WebLogisticaUtiles.Data" Source="LCSA.SGI.WebLogisticaUtiles.Data\LCSA.SGI.WebLogisticaUtiles.Data.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="LCSA.SGI.WebLogisticaUtiles.Data" Source="LCSA.SGI.WebLogisticaUtiles.Data\LCSA.SGI.WebLogisticaUtiles.Data.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LCSA.SGI.WebLogisticaUtiles.Bussness" Source="LCSA.SGI.WebLogisticaUtiles.Bussness\LCSA.SGI.WebLogisticaUtiles.Bussness.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="LCSA.SGI.WebLogisticaUtiles.Bussness" Source="LCSA.SGI.WebLogisticaUtiles.Bussness\LCSA.SGI.WebLogisticaUtiles.Bussness.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LCSA.SGI.WebLogisticaUtiles.Presentacion" Source="LCSA.SGI.WebLogisticaUtiles.Presentacion\LCSA.SGI.WebLogisticaUtiles.Presentacion.csproj" Description="Proyecto convertido correctamente">
+</Event><Event ErrorLevel="3" Project="LCSA.SGI.WebLogisticaUtiles.Presentacion" Source="LCSA.SGI.WebLogisticaUtiles.Presentacion\LCSA.SGI.WebLogisticaUtiles.Presentacion.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WebLogisticaUtiles.sln" Description="La solución se convirtió correctamente">
+</Event><Event ErrorLevel="3" Project="" Source="WebLogisticaUtiles.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="LCSA.SGI.WebLogisticaUtiles.Entity" Source="LCSA.SGI.WebLogisticaUtiles.Entity\LCSA.SGI.WebLogisticaUtiles.Entity.csproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event><Event ErrorLevel="0" Project="LCSA.SGI.WebLogisticaUtiles.Data" Source="LCSA.SGI.WebLogisticaUtiles.Data\LCSA.SGI.WebLogisticaUtiles.Data.csproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event><Event ErrorLevel="0" Project="LCSA.SGI.WebLogisticaUtiles.Bussness" Source="LCSA.SGI.WebLogisticaUtiles.Bussness\LCSA.SGI.WebLogisticaUtiles.Bussness.csproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event><Event ErrorLevel="0" Project="LCSA.SGI.WebLogisticaUtiles.Presentacion" Source="LCSA.SGI.WebLogisticaUtiles.Presentacion\LCSA.SGI.WebLogisticaUtiles.Presentacion.csproj" Description="Examen completo: no es necesario actualizar los archivos de proyecto.">
+</Event></UpgradeLog>

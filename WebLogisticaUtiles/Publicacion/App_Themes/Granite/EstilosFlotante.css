@@ -1,0 +1,43 @@
+﻿#wrapper1{
+	width:770px;
+	margin:0 auto;
+	padding-bottom:3px;
+	border:1px solid #FFFFFF;	
+	text-align:left;
+	background-color:#E4E4E4;
+	background-repeat:repeat-y;
+	background-position:top center;
+}
+* html .wrapper1 {   /*** IE5.x/win box model fix ***/
+	width: 772px;
+	width: 770px;
+}
+
+
+#contentwrapper1{
+	position: relative; /*** IE needs this or the contents won't show outside the parent container. ***/
+	width: 770px; /*468px;*/   /*** Critical left and right col/divider dimension value (moves inversly) ***/
+}
+
+* html #contentwrapper1 {  /*** IE5.x/win box model fix ***/
+	width: 470px;   /*** Critical left and right col/divider dimension value (moves inversly) ***/
+	width: 468px;   /*** Critical left and right col/divider dimension value (moves inversly) ***/
+}
+
+
+
+
+@media print 
+{
+	#contentwrapper1, * html #contentwrapper1, #wrapper1,* html #wrapper1
+	{
+		width:auto !important;
+		margin:auto !important;
+	}
+	#contentwrapper1 
+	{
+		border:none;
+	}
+}
+	
+ 

@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3164F904-C127-44A7-B96E-7FC44F15CD16}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LCSA.SGI.WebLogisticaUtiles.Presentacion</RootNamespace>
+    <AssemblyName>LCSA.SGI.WebLogisticaUtiles.Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IBM.Data.DB2.iSeries, Version=10.0.0.0, Culture=neutral, PublicKeyToken=9cdb2ebfb1f93a26" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Granite\Default.css" />
+    <Content Include="App_Themes\Granite\EstilosFlotante.css" />
+    <Content Include="Utiles\Transaccion\WebAprobacionReqUtiles.aspx" />
+    <Content Include="Utiles\Transaccion\WebConsultaConsumos.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MasterPage\AppMaster.Master.cs">
+      <DependentUpon>AppMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\AppMaster.Master.designer.cs">
+      <DependentUpon>AppMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\AppMaster2.Master.cs">
+      <DependentUpon>AppMaster2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\AppMaster2.Master.designer.cs">
+      <DependentUpon>AppMaster2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\AppMenu.Master.cs">
+      <DependentUpon>AppMenu.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\AppMenu.Master.designer.cs">
+      <DependentUpon>AppMenu.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\AppMenu2.Master.cs">
+      <DependentUpon>AppMenu2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\AppMenu2.Master.designer.cs">
+      <DependentUpon>AppMenu2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDinamico.aspx.cs">
+      <DependentUpon>MenuDinamico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuDinamico.aspx.designer.cs">
+      <DependentUpon>MenuDinamico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utiles\Sistemas\WebCambioContrasenaUtil.aspx.cs">
+      <DependentUpon>WebCambioContrasenaUtil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utiles\Sistemas\WebCambioContrasenaUtil.aspx.designer.cs">
+      <DependentUpon>WebCambioContrasenaUtil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utiles\Sistemas\WebConfiguracionUtil.aspx.cs">
+      <DependentUpon>WebConfiguracionUtil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utiles\Sistemas\WebConfiguracionUtil.aspx.designer.cs">
+      <DependentUpon>WebConfiguracionUtil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utiles\Sistemas\WebConfiguracionUtilFloat.aspx.cs">
+      <DependentUpon>WebConfiguracionUtilFloat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utiles\Sistemas\WebConfiguracionUtilFloat.aspx.designer.cs">
+      <DependentUpon>WebConfiguracionUtilFloat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebAprobacionReqUtiles.aspx.cs">
+      <DependentUpon>WebAprobacionReqUtiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebAprobacionReqUtiles.aspx.designer.cs">
+      <DependentUpon>WebAprobacionReqUtiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebBusquedaArticulo.aspx.cs">
+      <DependentUpon>WebBusquedaArticulo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebBusquedaArticulo.aspx.designer.cs">
+      <DependentUpon>WebBusquedaArticulo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebBusquedaGral.aspx.cs">
+      <DependentUpon>WebBusquedaGral.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebBusquedaGral.aspx.designer.cs">
+      <DependentUpon>WebBusquedaGral.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebConsultaConsumos.aspx.cs">
+      <DependentUpon>WebConsultaConsumos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebConsultaConsumos.aspx.designer.cs">
+      <DependentUpon>WebConsultaConsumos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebConsultaSolicitudUtiles.aspx.cs">
+      <DependentUpon>WebConsultaSolicitudUtiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebConsultaSolicitudUtiles.aspx.designer.cs">
+      <DependentUpon>WebConsultaSolicitudUtiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebNewSolicitudUtiles.aspx.cs">
+      <DependentUpon>WebNewSolicitudUtiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebNewSolicitudUtiles.aspx.designer.cs">
+      <DependentUpon>WebNewSolicitudUtiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebSolicitudUtiles.aspx.cs">
+      <DependentUpon>WebSolicitudUtiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Utiles\Transaccion\WebSolicitudUtiles.aspx.designer.cs">
+      <DependentUpon>WebSolicitudUtiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebLogin.aspx.cs">
+      <DependentUpon>WebLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebLogin.aspx.designer.cs">
+      <DependentUpon>WebLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebMenuPrincipal.aspx.cs">
+      <DependentUpon>WebMenuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebMenuPrincipal.aspx.designer.cs">
+      <DependentUpon>WebMenuPrincipal.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LCSA.SGI.WebLogisticaUtiles.Bussness\LCSA.SGI.WebLogisticaUtiles.Bussness.csproj">
+      <Project>{1AF1F37A-564A-40CC-B4B2-2DDA0F0539ED}</Project>
+      <Name>LCSA.SGI.WebLogisticaUtiles.Bussness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LCSA.SGI.WebLogisticaUtiles.Data\LCSA.SGI.WebLogisticaUtiles.Data.csproj">
+      <Project>{39B54A2A-212F-44AA-845D-8053C84DBC5B}</Project>
+      <Name>LCSA.SGI.WebLogisticaUtiles.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LCSA.SGI.WebLogisticaUtiles.Entity\LCSA.SGI.WebLogisticaUtiles.Entity.csproj">
+      <Project>{7FD8F40C-47E9-4409-927E-42526C4A580F}</Project>
+      <Name>LCSA.SGI.WebLogisticaUtiles.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\Granite\Skins.skin" />
+    <Content Include="App_Themes\Paper\Default.css" />
+    <None Include="App_Themes\Granite\Thumbs.db" />
+    <None Include="Images\Thumbs.db" />
+    <Content Include="Flash\catmangueras.swf" />
+    <Content Include="Flash\catservicios.swf" />
+    <Content Include="Flash\inicio.swf" />
+    <Content Include="Flash\iniciobaja.swf" />
+    <Content Include="Flash\peli.swf" />
+    <Content Include="Flash\Película1.swf" />
+    <Content Include="Flash\radialesmejor.swf" />
+    <Content Include="Flash\rot1.swf" />
+    <Content Include="Flash\TICO.swf" />
+    <Content Include="Flash\TIRE1%281%29.swf" />
+    <Content Include="Flash\TIRE1.swf" />
+    <Content Include="Images\Aprobado.ico" />
+    <Content Include="Images\APROBAR.BMP" />
+    <Content Include="Images\bg_tile.gif" />
+    <Content Include="Images\BUSCAR.BMP" />
+    <Content Include="Images\Buscar.ico" />
+    <Content Include="Images\car.gif" />
+    <Content Include="Images\car111.jpg" />
+    <Content Include="Images\Edit.ico" />
+    <Content Include="Images\EditarPeq.gif" />
+    <Content Include="Images\ELIMINA.BMP" />
+    <Content Include="Images\Eliminar.gif" />
+    <Content Include="Images\freeway.gif" />
+    <Content Include="Images\freeway111.jpg" />
+    <Content Include="Images\header_bg.png" />
+    <Content Include="Images\HojitaNueva.BMP" />
+    <Content Include="Images\LapicitoBorrar.bmp" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\LOGO.jpg" />
+    <Content Include="Images\logo_small.gif" />
+    <Content Include="Images\main_bg.png" />
+    <Content Include="Images\Materiales_oficina.png" />
+    <Content Include="Images\oficina.jpg" />
+    <Content Include="Images\sailing.gif" />
+    <Content Include="Images\sailing111.jpg" />
+    <Content Include="Images\stock_report.gif" />
+    <Content Include="MasterPage\AppMenu2.Master" />
+    <Content Include="MasterPage\AppMenu.Master" />
+    <Content Include="MasterPage\AppMaster2.Master" />
+    <Content Include="MasterPage\AppMaster.Master" />
+    <Content Include="App_Themes\Sand\Skins.skin" />
+    <Content Include="App_Themes\Paper\Skins.skin" />
+    <Content Include="App_Themes\Sand\Default.css" />
+    <Content Include="MasterPage\Creditos.css" />
+    <Content Include="MenuDinamico.aspx" />
+    <Content Include="Utiles\Sistemas\WebCambioContrasenaUtil.aspx" />
+    <Content Include="Utiles\Sistemas\WebConfiguracionUtil.aspx" />
+    <Content Include="Utiles\Sistemas\WebConfiguracionUtilFloat.aspx" />
+    <Content Include="Utiles\Transaccion\WebBusquedaArticulo.aspx" />
+    <Content Include="Utiles\Transaccion\WebBusquedaGral.aspx" />
+    <Content Include="Utiles\Transaccion\WebConsultaSolicitudUtiles.aspx" />
+    <Content Include="Utiles\Transaccion\WebNewSolicitudUtiles.aspx" />
+    <Content Include="Utiles\Transaccion\WebSolicitudUtiles.aspx" />
+    <Content Include="WebLogin.aspx" />
+    <Content Include="WebMenuPrincipal.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="App_Themes\Granite\Images\" />
+    <Folder Include="App_Themes\Paper\Images\" />
+    <Folder Include="App_Themes\Sand\Images\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58796</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
