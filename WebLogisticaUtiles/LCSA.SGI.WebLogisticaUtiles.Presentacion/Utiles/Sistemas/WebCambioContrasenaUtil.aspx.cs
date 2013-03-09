@@ -27,13 +27,13 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Sistema
         protected void Button2_Click(object sender, EventArgs e)
         {
             lblVerificacion.Visible = false;
-            SQL = "SELECT * FROM LALMINGB.ALIUSERS WHERE CODUSE='" + (string)(Session["Usuario"]).ToString().Trim() + "' AND CODPWD='" + txtPWDAnterior.Text.ToUpper().Trim() + "'";
+            SQL = "SELECT * FROM ALIUSERS WHERE CODUSE='" + (string)(Session["Usuario"]).ToString().Trim() + "' AND CODPWD='" + txtPWDAnterior.Text.ToUpper().Trim() + "'";
             objTablas = new BTablas();
             dtPruebaUsuarios = objTablas.Query(SQL);
             if (dtPruebaUsuarios.Rows.Count > 0)
             {
                 lblVerificacion.Visible = true;
-                SQL = "UPDATE LALMINGB.ALIUSERS SET CODPWD = '" + txtPWDNuevo.Text.ToUpper().Trim() + "' WHERE CODUSE='" + (string)(Session["Usuario"]).ToString().Trim() + "' AND CODPWD='" + txtPWDAnterior.Text.ToUpper().Trim() + "'";
+                SQL = "UPDATE ALIUSERS SET CODPWD = '" + txtPWDNuevo.Text.ToUpper().Trim() + "' WHERE CODUSE='" + (string)(Session["Usuario"]).ToString().Trim() + "' AND CODPWD='" + txtPWDAnterior.Text.ToUpper().Trim() + "'";
                 objTablas = new BTablas();
                 int i = objTablas.InUpDelTablas(SQL);
                 if (i == 1)

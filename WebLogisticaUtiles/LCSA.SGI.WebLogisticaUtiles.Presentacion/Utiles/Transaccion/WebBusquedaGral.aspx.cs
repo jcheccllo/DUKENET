@@ -27,7 +27,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Transaccion
             {
                 objTab = new BTablas();
                 SQL = "SELECT CAST(ODTCOD AS CHAR(3)) AS ODTCOD,CAST(ODTDPT AS CHAR(5)) AS ODTDPT,ODTDES, ifnull(T01AL1,'') AS T01AL1 " +
-                      " FROM LALMINGB.AIODET LEFT JOIN LUGTF.UGT01 ON (DIGITS(ODTDPT) = T01ESP AND T01IDT='CCT') WHERE odtdpt=0 ORDER BY ODTCOD";
+                      " FROM AIODET LEFT JOIN UGT01 ON (DIGITS(ODTDPT) = T01ESP AND T01IDT='CCT') WHERE odtdpt=0 ORDER BY ODTCOD";
                 dtOtr = objTab.Query(SQL);
                 dgvConsulta.DataSource = dtOtr;
                 dgvConsulta.DataBind();

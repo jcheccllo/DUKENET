@@ -28,7 +28,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Transaccion
             if (!Page.IsPostBack)
             {
                 objTab = new BTablas();
-                dtComboTipoArt = objTab.Query("SELECT MPTARG,MPTDES FROM LALMACEB.ALMTALM WHERE MPTTAB = 'CAI' AND MPTARG IN (10,11,12,13)");
+                dtComboTipoArt = objTab.Query("SELECT MPTARG,MPTDES FROM ALMTALM WHERE MPTTAB = 'CAI' AND MPTARG IN (10,11,12,13)");
                 cboTipoArt.DataSource = dtComboTipoArt;
                 cboTipoArt.DataTextField = "MPTDES";
                 cboTipoArt.DataValueField = "MPTARG";
@@ -38,8 +38,8 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Transaccion
                 SQL = "SELECT MPMCOD,MPMDES, " +
                       "TRIM(T01AL1) AS T01AL1,MPMSCO,MPMSDI,MPMCPR, " +
                       "MPMCDO,MPMUBI,MPMCCA,MPMPRO,MPMCTA " +
-                      "FROM LALMINGB.ALMMMAP LEFT OUTER JOIN " +
-                      "(SELECT T01ESP,T01AL1,T01AL2,T01NU2 FROM LUGTF.UGT01 WHERE T01IDT='UND' AND T01NU2=1) AS M ON SUBSTR(DIGITS(MPMUNI),2,2)=M.T01ESP " +
+                      "FROM ALMMMAP LEFT OUTER JOIN " +
+                      "(SELECT T01ESP,T01AL1,T01AL2,T01NU2 FROM UGT01 WHERE T01IDT='UND' AND T01NU2=1) AS M ON SUBSTR(DIGITS(MPMUNI),2,2)=M.T01ESP " +
                       "WHERE MPMCTA IN (10,11,12,13) AND MPMSTT IN ('M','O')";
                 dtArt = objTab.Query(SQL);
                 dgvConsulta.DataSource = dtArt;
@@ -100,8 +100,8 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Transaccion
             SQL = "SELECT MPMCOD,MPMDES, " +
                   "TRIM(T01AL1) AS T01AL1,MPMSCO,MPMSDI,MPMCPR, " +
                   "MPMCDO,MPMUBI,MPMCCA,MPMPRO,MPMCTA " +
-                  "FROM LALMINGB.ALMMMAP LEFT OUTER JOIN " +
-                  "(SELECT T01ESP,T01AL1,T01AL2,T01NU2 FROM LUGTF.UGT01 WHERE T01IDT='UND' AND T01NU2=1) AS M ON SUBSTR(DIGITS(MPMUNI),2,2)=M.T01ESP " +
+                  "FROM ALMMMAP LEFT OUTER JOIN " +
+                  "(SELECT T01ESP,T01AL1,T01AL2,T01NU2 FROM UGT01 WHERE T01IDT='UND' AND T01NU2=1) AS M ON SUBSTR(DIGITS(MPMUNI),2,2)=M.T01ESP " +
                   "WHERE MPMCTA='" + cboTipoArt.SelectedValue.Trim().ToString() + "' AND MPMSTT IN ('M','O')";
             dtArt = objTab.Query(SQL);
             dgvConsulta.DataSource = dtArt;

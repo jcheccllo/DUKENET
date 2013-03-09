@@ -53,7 +53,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.MasterPage
 
                 //ColocaR USUARIO NO OLVIDAR
                 objTablas = new BTablas();
-                SQL = "SELECT * FROM LALMINGB.WEBING71 WHERE IDAPLI='WEBLO'";
+                SQL = "SELECT * FROM WEBING71 WHERE IDAPLI='WEBLO'";
                 dtOpcionesPrincipales = objTablas.Query(SQL);
                 if (dtOpcionesPrincipales.Rows.Count > 0)
                 {
@@ -71,7 +71,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.MasterPage
                 {
                     case "WUTIL":
                         dtDataTable = null;
-                        dtDataTable = objTablas.Query("SELECT * FROM LALMINGB.WEBING72 WHERE IDOPCI='WUTIL' AND IDOUSU='" + (string)(Session["Usuario"]).ToString().Trim() + "' ORDER BY IDOPCH");
+                        dtDataTable = objTablas.Query("SELECT * FROM WEBING72 WHERE IDOPCI='WUTIL' AND IDOUSU='" + (string)(Session["Usuario"]).ToString().Trim() + "' ORDER BY IDOPCH");
                         MyMenu.Items.Clear();
                         if (dtDataTable != null && dtDataTable.Rows.Count > 0)
                         {
@@ -88,7 +88,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.MasterPage
                         break;
                     case "WARCH":
                         dtDataTable = null;
-                        dtDataTable = objTablas.Query("SELECT * FROM LALMINGB.WEBING72 WHERE IDOPCI='WARCH' AND IDOUSU='" + (string)(Session["Usuario"]).ToString().Trim() + "' ORDER BY IDOPCH");
+                        dtDataTable = objTablas.Query("SELECT * FROM WEBING72 WHERE IDOPCI='WARCH' AND IDOUSU='" + (string)(Session["Usuario"]).ToString().Trim() + "' ORDER BY IDOPCH");
                         MyMenu.Items.Clear();
                         if (dtDataTable != null && dtDataTable.Rows.Count > 0)
                         {
@@ -121,7 +121,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.MasterPage
             {
                 case "WUTIL":
                     dtDataTable = null;
-                    dtDataTable = objTablas.Query("SELECT * FROM LALMINGB.WEBING72 WHERE IDOPCI='WUTIL' AND IDOUSU='" + (string)(Session["Usuario"]).ToString().Trim() + "' ORDER BY IDOPCH");
+                    dtDataTable = objTablas.Query("SELECT * FROM WEBING72 WHERE IDOPCI='WUTIL' AND IDOUSU='" + (string)(Session["Usuario"]).ToString().Trim() + "' ORDER BY IDOPCH");
                     MyMenu.Items.Clear();
 
                     if (dtDataTable != null && dtDataTable.Rows.Count > 0)
@@ -139,7 +139,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.MasterPage
                     break;
                 case "WARCH":
                     dtDataTable = null;
-                    dtDataTable = objTablas.Query("SELECT * FROM LALMINGB.WEBING72 WHERE IDOPCI='WARCH' AND IDOUSU='" + (string)(Session["Usuario"]).ToString().Trim() + "' ORDER BY IDOPCH");
+                    dtDataTable = objTablas.Query("SELECT * FROM WEBING72 WHERE IDOPCI='WARCH' AND IDOUSU='" + (string)(Session["Usuario"]).ToString().Trim() + "' ORDER BY IDOPCH");
                     MyMenu.Items.Clear();
 
                     if (dtDataTable != null && dtDataTable.Rows.Count > 0)
