@@ -36,10 +36,10 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Transaccion
 
                 objTab = new BTablas();
                 SQL = "SELECT MPMCOD,MPMDES, " +
-                      "TRIM(T01AL1) AS T01AL1,MPMSCO,MPMSDI,MPMCPR, " +
+                      "LTRIM(RTRIM(T01AL1)) AS T01AL1,MPMSCO,MPMSDI,MPMCPR, " +
                       "MPMCDO,MPMUBI,MPMCCA,MPMPRO,MPMCTA " +
                       "FROM ALMMMAP LEFT OUTER JOIN " +
-                      "(SELECT T01ESP,T01AL1,T01AL2,T01NU2 FROM UGT01 WHERE T01IDT='UND' AND T01NU2=1) AS M ON SUBSTR(DIGITS(MPMUNI),2,2)=M.T01ESP " +
+                      "(SELECT T01ESP,T01AL1,T01AL2,T01NU2 FROM UGT01 WHERE T01IDT='UND' AND T01NU2=1) AS M ON SUBSTRING(CONVERT(VARCHAR(3),MPMUNI),2,2)=M.T01ESP " +
                       "WHERE MPMCTA IN (10,11,12,13) AND MPMSTT IN ('M','O')";
                 dtArt = objTab.Query(SQL);
                 dgvConsulta.DataSource = dtArt;

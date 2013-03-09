@@ -52,3 +52,12 @@ E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\bin\Debug\LCS
 E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\obj\Debug\ResolveAssemblyReference.cache
 E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Bussness.dll
 E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Bussness.pdb
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Bussness.dll
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Bussness.pdb
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Data.dll
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Data.pdb
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Bussness.dll
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Bussness\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Bussness.pdb
