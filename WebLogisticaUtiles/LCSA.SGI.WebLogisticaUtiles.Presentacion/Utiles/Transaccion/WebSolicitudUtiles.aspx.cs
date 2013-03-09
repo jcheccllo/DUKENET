@@ -29,12 +29,12 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Transaccion
 " WHEN (A11TUR = '2') THEN '2do Turno' " +
 " ELSE '3er Turno' END A11TUR, " +
 " CASE WHEN A11OTR IN (0,99) THEN U.T01AL1 ELSE CC.T01AL1 END AS T01AL1,CC.ODTDES, " +
-" ISNULL(CASE WHEN (A11STT & ' - ' & A11EST) IN('S - D','J - D','G - D') THEN 'X Generar' " +
-" WHEN (A11STT & ' - ' & A11EST) IN('S - SP') THEN 'Generado Parcial' " +
-" WHEN (A11STT & ' - ' & A11EST) IN('S - 1') THEN 'x Firma' " +
-" WHEN (A11STT & ' - ' & A11EST) IN('S - 2') THEN 'x Firma Jef.' " +
-" WHEN (A11STT & ' - ' & A11EST) IN('S - 3') THEN 'x Firma Ger.' " +
-" WHEN (A11STT & ' - ' & A11EST) IN('S - S') THEN 'Generado' " +
+" ISNULL(CASE WHEN (A11STT + ' - ' + A11EST) IN('S - D','J - D','G - D') THEN 'X Generar' " +
+" WHEN (A11STT + ' - ' + A11EST) IN('S - SP') THEN 'Generado Parcial' " +
+" WHEN (A11STT + ' - ' + A11EST) IN('S - 1') THEN 'x Firma' " +
+" WHEN (A11STT + ' - ' + A11EST) IN('S - 2') THEN 'x Firma Jef.' " +
+" WHEN (A11STT + ' - ' + A11EST) IN('S - 3') THEN 'x Firma Ger.' " +
+" WHEN (A11STT + ' - ' + A11EST) IN('S - S') THEN 'Generado' " +
 " END,'') ESTADO, (SELECT TOP 1 TRANOM FROM V_TRABAJ WHERE TRACVE=A11SOL) AS NOMBRE " +
 " FROM ALI011UTIL AS A11 LEFT OUTER JOIN " +
 " (SELECT ODTSTT, CAST(ODTCOD AS CHAR(3)) AS ODTCOD,CAST(ODTDPT AS CHAR(5)) AS ODTDPT,ODTDES, ISNULL(T01AL1,'') AS T01AL1 " +

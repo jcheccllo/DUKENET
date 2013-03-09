@@ -56,3 +56,11 @@ E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Data\bin\Debug\LCSA.SG
 E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Data\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Data.pdb
 E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Data\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
 E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Data\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Data\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Data.dll
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Data\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Data.pdb
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Data\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Data\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Data\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Data\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Data.csproj.ResolveComReference.cache
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Data\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Data.dll
+C:\Users\proyecto\DUKENET\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Data\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Data.pdb
