@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data;
-using cwbx;
-using IBM.Data.DB2.iSeries;
+using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,11 +10,11 @@ namespace LCSA.SGI.WebLogisticaUtiles.Data
 {
     public class DTablas
     {
-        ConexionAS400 objCn = new ConexionAS400();
+        SqlConnection cn = new SqlConnection("Data Source = .; Initial Catalog = WEBLOGISTICA; Integrated Security = SSPI;");
 
         public DataTable Query(string Sql)
         {
-            iDB2DataAdapter da = new iDB2DataAdapter(Sql, objCn.Conectar);
+            SqlDataAdapter da = new SqlDataAdapter(Sql, cn);
             DataTable tabla = new DataTable();
             da.Fill(tabla);
             return tabla;
@@ -26,16 +25,16 @@ namespace LCSA.SGI.WebLogisticaUtiles.Data
             int i = 0;
             try
             {
-                iDB2Command cmd = new iDB2Command();
+                SqlCommand cmd = new SqlCommand();
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = SQL;
-                cmd.Connection = objCn.Conectar;
+                cmd.Connection = cn;
                 cmd.Connection.Open();
                 cmd.ExecuteNonQuery();
                 i = 1;
                 cmd.Dispose();
-                objCn.Conectar.Dispose();
-                objCn.Conectar.Close();
+                cn.Dispose();
+                cn.Close();
             }
             catch { throw; }
             return i;

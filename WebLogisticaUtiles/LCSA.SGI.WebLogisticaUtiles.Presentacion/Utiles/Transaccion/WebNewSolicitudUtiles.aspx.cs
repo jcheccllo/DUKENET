@@ -132,7 +132,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Transaccion
             eCabReq.UsuarioDespacha = "";
             /********************************************************/
             objTran = new BTransaccion();
-            int i = objTran.BInsertCabReq(eCabReq, "LALMINGB.ALI011UTIL");
+            int i = objTran.BInsertCabReq(eCabReq, "ALI011UTIL");
         }
 
         void GrabaDetalle()
@@ -163,7 +163,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Transaccion
                 EDetReq.UserDespacha = "";
                 /********************************************************/
                 objTran = new BTransaccion();
-                int j = objTran.BInsertDetReq(EDetReq, "LALMINGB.ALI012UTIL");
+                int j = objTran.BInsertDetReq(EDetReq, "ALI012UTIL");
             }
         }
         
@@ -414,7 +414,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Transaccion
 
 
             objTablas = new BTablas();
-            Nro = objTablas.Query("SELECT (COUNT(*) + 1) AS CORR FROM LALMINGB.ali011util WHERE A11SOL=" + codSolici + "").Rows[0]["CORR"].ToString().Trim();
+            Nro = objTablas.Query("SELECT (COUNT(*) + 1) AS CORR FROM ali011util WHERE A11SOL=" + codSolici + "").Rows[0]["CORR"].ToString().Trim();
             nroReq = Hostmaquina + " - " + Nro;
 
 

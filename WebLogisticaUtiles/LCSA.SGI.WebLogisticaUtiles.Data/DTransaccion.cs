@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data;
-using cwbx;
-using IBM.Data.DB2.iSeries;
+using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,14 +10,14 @@ namespace LCSA.SGI.WebLogisticaUtiles.Data
 {
     public class DTransaccion
     {
-        ConexionAS400 objCn = new ConexionAS400();
+        SqlConnection cn = new SqlConnection("Data Source = .; Initial Catalog = WEBLOGISTICA;  Integrated Security = True;");
 
         public int DInsertCabReq(EReqCabecera eReqCab, string tabla)
         {
             int i = 0;
             try
             {
-                iDB2Command cmd = new iDB2Command();
+                SqlCommand cmd = new SqlCommand();
                 cmd.CommandType = CommandType.Text;
                 string sql = "INSERT INTO " + tabla + " ( " +
 " A11STT, A11NSA, A11TSA, A11FSA, A11TUR, " +
@@ -35,13 +34,13 @@ namespace LCSA.SGI.WebLogisticaUtiles.Data
 " '" + eReqCab.FechaAprueba3 + "', " + eReqCab.HoraMinuto + ", '" + eReqCab.Estado + "', " + eReqCab.NroValeSalida + ", " + eReqCab.FechaValeSalida + ", " +
 " " + eReqCab.HoraValeSalida + ", '" + eReqCab.UsuarioDespacha + "'," + eReqCab.CodUserGenera + "," + eReqCab.CodUserAprueba1 + "," + eReqCab.CodUserAprueba2 + "," + eReqCab.CodUserAprueba3 + ") ";
                 cmd.CommandText = sql;
-                cmd.Connection = objCn.Conectar;
+                cmd.Connection = cn;
                 cmd.Connection.Open();
                 cmd.ExecuteNonQuery();
                 i = 1;
                 cmd.Dispose();
-                objCn.Conectar.Dispose();
-                objCn.Conectar.Close();
+                cn.Dispose();
+                cn.Close();
             }
             catch { throw; }
             return i;
@@ -51,7 +50,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Data
             int i = 0;
             try
             {
-                iDB2Command cmd = new iDB2Command();
+                SqlCommand cmd = new SqlCommand();
                 cmd.CommandType = CommandType.Text;
                 string sql = "INSERT INTO " + tabla + " " +
 " (A12STT, A12NSA, A12NIT, A12COD, A12CCA, " +
@@ -62,13 +61,13 @@ namespace LCSA.SGI.WebLogisticaUtiles.Data
 " " + eReqDet.Procedencia + ", " + eReqDet.CtaAlmacen + ", " + eReqDet.CantidadSoli + ", " + eReqDet.CantidadAte + ", " + eReqDet.ImpSoles + ", " +
 " " + eReqDet.ImpDolares + ", '" + eReqDet.Estado + "', " + eReqDet.NroValeSalida + ", " + eReqDet.FechaSalida + ", " + eReqDet.HoraSalida + ", '" + eReqDet.UserDespacha + "')";
                 cmd.CommandText = sql;
-                cmd.Connection = objCn.Conectar;
+                cmd.Connection = cn;
                 cmd.Connection.Open();
                 cmd.ExecuteNonQuery();
                 i = 1;
                 cmd.Dispose();
-                objCn.Conectar.Dispose();
-                objCn.Conectar.Close();
+                cn.Dispose();
+                cn.Close();
             }
             catch { throw; }
             return i;

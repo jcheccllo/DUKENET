@@ -40,13 +40,13 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion
                 //      " LUGTF.UGT01 ON (T01IDT='CCT' AND DATCVE = T01ESP)    WHERE CODUSE='" + Login1.UserName.ToUpper().Trim() + "' AND CODPWD='" + Login1.Password.ToUpper().Trim() + "'";
 
                 SQL = "SELECT CODUSE,TRANOM AS NOMEMP,CODEMP, " +
-                        " CASE WHEN IFNULL(IDOARE,'N')='N' THEN DATCVE ELSE IDOARE END AS R99PUE, " +
-                        " CASE WHEN IFNULL(IDOARE,'N')='N' THEN DATDES ELSE (SELECT T01AL1 FROM LUGTF.UGT01 WHERE T01IDT='CCT' AND T01ESP=IDOARE) END AS R99NPU, " +
-                        " T01NU3 AS GERENCIA " +
-                        " FROM LALMINGB.ALIUSERS LEFT OUTER JOIN " +
-                        " adamperuv2.v_trabaj ON CODEMP=CAST(TRACVE AS DECIMAL(4,0)) LEFT OUTER JOIN " +
-                        " LUGTF.UGT01 ON (T01IDT='CCT' AND DATCVE = T01ESP)  LEFT OUTER JOIN " +
-                        " LALMINGB.WEBING80 ON (codemp=IDOCOD)  " +
+                        " CASE WHEN ISNULL(IDOARE,'N')='N' THEN DATCVE ELSE IDOARE END AS R99PUE, " +
+                        " CASE WHEN ISNULL(IDOARE,'N')='N' THEN DATDES ELSE (SELECT T01AL1 FROM UGT01 WHERE T01IDT='CCT' AND T01ESP=IDOARE) END AS R99NPU, " +
+                        " ISNULL(T01NU3,0) AS GERENCIA " +
+                        " FROM ALIUSERS LEFT OUTER JOIN " +
+                        " v_trabaj ON CODEMP=CAST(TRACVE AS DECIMAL(4,0)) LEFT OUTER JOIN " +
+                        " UGT01 ON (T01IDT='CCT' AND DATCVE = T01ESP)  LEFT OUTER JOIN " +
+                        " WEBING80 ON (codemp=IDOCOD)  " +
                         " WHERE CODUSE='" + Login1.UserName.ToUpper().Trim() + "' AND CODPWD='" + Login1.Password.ToUpper().Trim() + "'";
 
 
@@ -63,7 +63,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion
                     Session["Puesto"] = dtPruebaUsuarios.Rows[0]["R99NPU"].ToString();
                     Session["Gerencia"] = dtPruebaUsuarios.Rows[0]["GERENCIA"].ToString();
                     Session["indiceOpcion"] = "WUTIL";
-                    SQL = "SELECT A15GER FROM LALMINGB.ALI015UTIL WHERE A15USU='" + Login1.UserName.ToUpper().Trim() + "'";
+                    SQL = "SELECT A15GER FROM ALI015UTIL WHERE A15USU='" + Login1.UserName.ToUpper().Trim() + "'";
                     objTablas = new BTablas();
                     dtPermisosUsuarios = objTablas.Query(SQL);
 

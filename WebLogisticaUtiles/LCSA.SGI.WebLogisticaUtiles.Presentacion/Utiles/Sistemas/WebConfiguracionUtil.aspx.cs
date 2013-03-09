@@ -21,7 +21,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Sistema
         DataTable dtUsuarios = new DataTable();  
         protected void Page_Load(object sender, EventArgs e)
         {
-            SQL = "SELECT CODUSE,CODEMP,NOMEMP FROM LALMINGB.ALIUSERS";
+            SQL = "SELECT CODUSE,CODEMP,NOMEMP FROM ALIUSERS";
             objTablas = new BTablas();
             dtUsuarios = objTablas.Query(SQL);
             dgvUsuarios.DataSource = dtUsuarios;
@@ -31,7 +31,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Sistema
         protected void dgvUsuarios_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
             dgvUsuarios.PageIndex = e.NewPageIndex;
-            SQL = "SELECT CODUSE,CODEMP,NOMEMP FROM LALMINGB.ALIUSERS";
+            SQL = "SELECT CODUSE,CODEMP,NOMEMP FROM ALIUSERS";
             objTablas = new BTablas();
             dtUsuarios = objTablas.Query(SQL);
             dgvUsuarios.DataSource = dtUsuarios;

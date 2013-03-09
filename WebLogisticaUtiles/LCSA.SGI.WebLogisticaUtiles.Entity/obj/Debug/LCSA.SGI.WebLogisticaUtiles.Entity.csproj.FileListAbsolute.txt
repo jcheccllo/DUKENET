@@ -13,3 +13,13 @@ C:\Users\LAPDIER1\Desktop\Carlos Diaz\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUt
 C:\Users\LAPDIER1\Desktop\Carlos Diaz\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\LAPDIER1\Desktop\Carlos Diaz\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
 C:\Users\LAPDIER1\Desktop\Carlos Diaz\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb
+C:\Users\LAPDCUC1\Desktop\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
+C:\Users\LAPDCUC1\Desktop\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb
+C:\Users\LAPDCUC1\Desktop\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\LAPDCUC1\Desktop\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
+C:\Users\LAPDCUC1\Desktop\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb
+E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
+E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\bin\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb
+E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\ResolveAssemblyReference.cache
+E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.dll
+E:\SQL\SQL\WebLogisticaUtiles\LCSA.SGI.WebLogisticaUtiles.Entity\obj\Debug\LCSA.SGI.WebLogisticaUtiles.Entity.pdb

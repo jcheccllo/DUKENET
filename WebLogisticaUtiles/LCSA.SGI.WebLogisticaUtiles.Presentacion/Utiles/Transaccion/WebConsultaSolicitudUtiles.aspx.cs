@@ -29,14 +29,14 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Transaccion
                 A11NSA = Request.QueryString["A11NSA"];
                 SQL = "SELECT " +
 " trim(A12COD) as A12COD,trim(MPMDES) as MPMDES,A12CAS,trim(M.T01AL1) as T01AL1,A12CAD,A12IMP,A12IMD,A12PRO,A12CTA,A12CCA,MPMSCO,MPMSDI,MPMUBI,MPMCPR,MPMCDO, " +
-" CASE WHEN A11OTR IN (0,99) THEN U.T01AL1 ELSE CC.T01AL1 END AS AREA,CC.ODTDES,A11EST,A11STT, (SELECT TRANOM FROM ADAMPERUV2.V_TRABAJ WHERE TRACVE=A11SOL FETCH FIRST 1 ROW ONLY) AS NOMBRE " +
-" FROM LALMINGB.ALI012UTIL LEFT OUTER JOIN " +
-" LALMINGB.ALMMMAP ON (A12COD=MPMCOD AND A12CTA=MPMCTA AND A12PRO=MPMPRO AND A12CCA=MPMCCA) LEFT OUTER JOIN " +
-" (SELECT T01ESP,T01AL1,T01AL2,T01NU2 FROM LUGTF.UGT01 WHERE T01IDT='UND' AND T01NU2=1) AS M ON SUBSTR(DIGITS(MPMUNI),2,2)=M.T01ESP " +
-" LEFT OUTER JOIN LALMINGB.ALI011UTIL AS A11 ON A12NSA=A11NSA  LEFT OUTER JOIN " +
+" CASE WHEN A11OTR IN (0,99) THEN U.T01AL1 ELSE CC.T01AL1 END AS AREA,CC.ODTDES,A11EST,A11STT, (SELECT TRANOM FROM V_TRABAJ WHERE TRACVE=A11SOL FETCH FIRST 1 ROW ONLY) AS NOMBRE " +
+" FROM ALI012UTIL LEFT OUTER JOIN " +
+" ALMMMAP ON (A12COD=MPMCOD AND A12CTA=MPMCTA AND A12PRO=MPMPRO AND A12CCA=MPMCCA) LEFT OUTER JOIN " +
+" (SELECT T01ESP,T01AL1,T01AL2,T01NU2 FROM UGT01 WHERE T01IDT='UND' AND T01NU2=1) AS M ON SUBSTR(DIGITS(MPMUNI),2,2)=M.T01ESP " +
+" LEFT OUTER JOIN ALI011UTIL AS A11 ON A12NSA=A11NSA  LEFT OUTER JOIN " +
 " (SELECT ODTSTT, CAST(ODTCOD AS CHAR(3)) AS ODTCOD,CAST(ODTDPT AS CHAR(5)) AS ODTDPT,ODTDES, ifnull(T01AL1,'') AS T01AL1 " +
-" FROM LALMINGB.AIODET LEFT JOIN LUGTF.UGT01 ON (DIGITS(ODTDPT) = T01ESP AND T01IDT='CCT')) AS CC ON A11.A11OTR=CC.ODTCOD " +
-" LEFT OUTER JOIN (SELECT T01ESP,T01AL1 FROM LUGTF.UGT01 WHERE T01IDT='CCT') AS U ON DIGITS(A11.A11ARE)=U.T01ESP " +
+" FROM AIODET LEFT JOIN UGT01 ON (DIGITS(ODTDPT) = T01ESP AND T01IDT='CCT')) AS CC ON A11.A11OTR=CC.ODTCOD " +
+" LEFT OUTER JOIN (SELECT T01ESP,T01AL1 FROM UGT01 WHERE T01IDT='CCT') AS U ON DIGITS(A11.A11ARE)=U.T01ESP " +
 " WHERE MPMSTT IN ('M','O') AND A12NSA= '" + A11NSA.Trim() + "'";
                 objTab = new BTablas();
                 dtRequerimiento = objTab.Query(SQL);
@@ -95,7 +95,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Transaccion
             fecha = FechaSis.ToShortDateString().Substring(6, 4) + FechaSis.ToShortDateString().Substring(3, 2) + FechaSis.ToShortDateString().Substring(0, 2);
             if (Convert.ToDecimal(FechaSis.Minute.ToString()) <= 9) { Hora = FechaSis.Hour.ToString() + "0" + FechaSis.Minute.ToString(); }
             else { Hora = FechaSis.Hour.ToString() + FechaSis.Minute.ToString(); }
-            int h = objTab.InUpDelTablas("UPDATE LALMINGB.ALI011UTIL SET A11CA1 = '" + Convert.ToDecimal((string)(Session["CodPlanilla"])) + "', A11UA1 = '" + (string)(Session["Usuario"]).ToString().Trim() + "',A11FA1 = '" + fecha + "',A11UH1=" + Convert.ToDecimal(Hora) + ",A11AUT = '" + Convert.ToDecimal((string)(Session["CodPlanilla"])) + "',A11EST='D' WHERE A11NSA= '" + A11NSA.Trim() + "'");
+            int h = objTab.InUpDelTablas("UPDATE ALI011UTIL SET A11CA1 = '" + Convert.ToDecimal((string)(Session["CodPlanilla"])) + "', A11UA1 = '" + (string)(Session["Usuario"]).ToString().Trim() + "',A11FA1 = '" + fecha + "',A11UH1=" + Convert.ToDecimal(Hora) + ",A11AUT = '" + Convert.ToDecimal((string)(Session["CodPlanilla"])) + "',A11EST='D' WHERE A11NSA= '" + A11NSA.Trim() + "'");
             Mensaje("Requerimiento " + A11NSA.Trim().ToString() + " ha sido Aprobado");
 
             Response.Redirect("~/Utiles/Transaccion/WebAprobacionReqUtiles.aspx");
@@ -116,7 +116,7 @@ namespace LCSA.SGI.WebLogisticaUtiles.Presentacion.Utiles.Transaccion
             fecha = FechaSis.ToShortDateString().Substring(6, 4) + FechaSis.ToShortDateString().Substring(3, 2) + FechaSis.ToShortDateString().Substring(0, 2);
             if (Convert.ToDecimal(FechaSis.Minute.ToString()) <= 9) { Hora = FechaSis.Hour.ToString() + "0" + FechaSis.Minute.ToString(); }
             else { Hora = FechaSis.Hour.ToString() + FechaSis.Minute.ToString(); }
-            int h = objTab.InUpDelTablas("UPDATE LALMINGB.ALI011UTIL SET A11CA1 = '" + Convert.ToDecimal((string)(Session["CodPlanilla"])) + "', A11UA1 = '" + (string)(Session["Usuario"]).ToString().Trim() + "',A11FA1 = '" + fecha + "',A11UH1=" + Convert.ToDecimal(Hora) + ",A11AUT = '" + Convert.ToDecimal((string)(Session["CodPlanilla"])) + "',A11STT='E' WHERE A11NSA= '" + A11NSA.Trim() + "'");
+            int h = objTab.InUpDelTablas("UPDATE ALI011UTIL SET A11CA1 = '" + Convert.ToDecimal((string)(Session["CodPlanilla"])) + "', A11UA1 = '" + (string)(Session["Usuario"]).ToString().Trim() + "',A11FA1 = '" + fecha + "',A11UH1=" + Convert.ToDecimal(Hora) + ",A11AUT = '" + Convert.ToDecimal((string)(Session["CodPlanilla"])) + "',A11STT='E' WHERE A11NSA= '" + A11NSA.Trim() + "'");
             Mensaje("Requerimiento " + A11NSA.Trim().ToString() + " ha sido Desaprobado");
 
             Response.Redirect("~/Utiles/Transaccion/WebAprobacionReqUtiles.aspx");
