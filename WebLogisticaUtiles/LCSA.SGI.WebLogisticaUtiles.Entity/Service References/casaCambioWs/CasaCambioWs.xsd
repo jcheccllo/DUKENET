@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://casacambio.upc.edu/" targetNamespace="http://casacambio.upc.edu/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="cambiarDolaresaSoles" type="tns:cambiarDolaresaSoles" />
+  <xs:element name="cambiarDolaresaSolesResponse" type="tns:cambiarDolaresaSolesResponse" />
+  <xs:element name="cambiarSolesaDolares" type="tns:cambiarSolesaDolares" />
+  <xs:element name="cambiarSolesaDolaresResponse" type="tns:cambiarSolesaDolaresResponse" />
+  <xs:element name="hello" type="tns:hello" />
+  <xs:element name="helloResponse" type="tns:helloResponse" />
+  <xs:complexType name="hello">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="name" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="helloResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambiarDolaresaSoles">
+    <xs:sequence>
+      <xs:element name="monto" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambiarDolaresaSolesResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambiarSolesaDolares">
+    <xs:sequence>
+      <xs:element name="monto" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="cambiarSolesaDolaresResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

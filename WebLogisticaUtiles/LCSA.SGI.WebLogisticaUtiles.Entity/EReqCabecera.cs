@@ -2,11 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using LCSA.SGI.WebLogisticaUtiles.Entity.casaCambioWs;
 
 namespace LCSA.SGI.WebLogisticaUtiles.Entity
 {
     public class EReqCabecera
     {
+        private CasaCambioWs casaCambioWS;
         private string situacion;
         public string Situacion
         {
@@ -224,6 +226,21 @@ namespace LCSA.SGI.WebLogisticaUtiles.Entity
         {
             get { return usuarioDespacha; }
             set { usuarioDespacha = value; }
+        }
+
+        public void usarWWs(double monto)
+        {
+
+
+            cambiarDolaresaSolesRequest request = new cambiarDolaresaSolesRequest();
+
+            request.monto = monto;
+
+            cambiarDolaresaSolesResponse response = new cambiarDolaresaSolesResponse();
+
+            response = casaCambioWS.cambiarDolaresaSoles(request);
+
+            
         }
     }
 }
